@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '~/styles/themes/light';
-import GlobalStyles from '~/styles/core/base';
+import GlobalStyles from '~/config/styles/core/globals';
 
 const MainComponent = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
