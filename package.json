@@ -1,0 +1,30 @@
+{
+  "name": "zmg-fe-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozekcore/zmg-fe-test.git"
+  },
+  "keywords": [
+    "Zemoga",
+    "Frontend",
+    "test"
+  ],
+  "author": "Jose Barrios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jozekcore/zmg-fe-test/issues"
+  },
+  "homepage": "https://github.com/jozekcore/zmg-fe-test#readme",
+  "dependencies": {
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
