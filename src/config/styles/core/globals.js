@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const BaseStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'Lato';
   src: url('/fonts/Lato-Black.woff2') format('woff2'),
@@ -450,4 +450,4 @@ const BaseStyles = createGlobalStyle`
   }
 `;
 
-export default BaseStyles;
+export default GlobalStyles;

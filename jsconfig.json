@@ -3,6 +3,7 @@
     "baseUrl": "./",
     "paths": {
       "~/pages/*": ["src/pages/*"],
+      "~/hooks/*": ["src/hooks/*"],
       "~/config/*": ["src/config/*"],
       "~/styles/*": ["src/config/styles/*"],
       "~/components/*": ["src/components/*"],

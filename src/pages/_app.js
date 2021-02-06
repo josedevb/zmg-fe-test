@@ -2,13 +2,16 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '~/styles/themes/light';
+import I18n from '~/config/lib/contexts/i18n';
 import GlobalStyles from '~/config/styles/core/globals';
 
 const MainComponent = ({ Component, pageProps }) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <Component {...pageProps} />
-  </ThemeProvider>
+  <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  </I18n>
 );
 
 MainComponent.propTypes = {

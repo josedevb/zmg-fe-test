@@ -16,6 +16,7 @@ class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
+        lang: ctx.query.lng,
         styles: (
           <>
             {initialProps.styles}
@@ -30,7 +31,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='es'>
+      <Html lang={this.props.lang}>
         <Head>
           <meta name='robots' content='all' />
           <meta content='en' property='og:locale' />

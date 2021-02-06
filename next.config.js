@@ -6,5 +6,14 @@ module.exports = withFonts(
     webpack(config) {
       return config;
     },
+    redirects() {
+      return [
+        {
+          source: '/',
+          destination: '/en',
+          permanent: true,
+        },
+      ]
+    },
   })
 );
