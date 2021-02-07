@@ -33,7 +33,8 @@ export default {
     black: colors.transparentBlack
   },
   gradient: {
-    softGray: colors.softGray
+    softGray: colors.softGray,
+    lightBlack: colors.lightBlack
   },
   votes: {
     like: colors.lightGreen,
@@ -45,7 +46,7 @@ export default {
     mobileS: { width: '92%', maxWidth: '92%' },
     mobileM: { width: '92%', maxWidth: '92%' },
     tablet: { width: '85%', maxWidth: '85%' },
-    desktop: { width: '85%', maxWidth: '85%' },
+    desktop: { width: '50%', maxWidth: '50%' },
     screen: { width: '75%', maxWidth: '75%' },
     limitFluid: { width: '100%', maxWidth: '1920px' },
     fluid: { width: '100%', maxWidth: '100%' }

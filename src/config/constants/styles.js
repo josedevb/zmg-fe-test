@@ -6,7 +6,7 @@ const size = {
   tablet: '768px',
   laptop: '1024px',
   laptopL: '1440px',
-  desktop: '2560px'
+  desktop: '1920px'
 };
 
 export const devices = {
@@ -16,8 +16,7 @@ export const devices = {
   tablet: `@media only screen and (min-width: ${size.tablet})`,
   laptop: `@media only screen and (min-width: ${size.laptop})`,
   laptopL: `@media only screen and (min-width: ${size.laptopL})`,
-  desktop: `@media only screen and (min-width: ${size.desktop})`,
-  desktopL: `@media only screen and (min-width: ${size.desktop})`
+  desktop: `@media only screen and (min-width: ${size.desktop})`
 };
 
 export const themes = {

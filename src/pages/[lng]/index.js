@@ -1,38 +1,16 @@
 import PropTypes from 'prop-types';
 
 import Hero from '~/components/Hero/Hero';
+import votedPersons from '~/__mocks__/persons';
 import Layout from '~/components/Layout/Layout';
+import VoteSection from '~/components/VoteSection/VoteSection';
 import BeHeardMessage from '~/components/BeHeardMessage/BeHeardMessage';
 
-const persons = [
-  {
-    name: 'Pope Francis',
-    description:
-      "He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or true pedophile punishing pontiff? (thumbs up)",
-    image: '/images/pope.png',
-    votes: {
-      likes: 0,
-      dislikes: 0
-    },
-    showInHero: true,
-    closingDays: 22
-  },
-  {
-    name: 'Kanye West',
-    image: '/images/kanye.png',
-    votes: {
-      likes: 0,
-      dislikes: 0
-    },
-    showInHero: false,
-    closingDays: 24
-  }
-];
-
-const HomePage = ({ mainPerson }) => (
+const HomePage = ({ persons, mainPerson }) => (
   <Layout>
     <Hero person={mainPerson} />
     <BeHeardMessage />
+    <VoteSection persons={persons} />
   </Layout>
 );
 
@@ -41,17 +19,20 @@ export async function getServerSideProps({ params }) {
     `public/locales/${params.lng}.json`
   );
 
+  const mainPerson = votedPersons.find((person) => person.showInHero);
+
   return {
     props: {
-      persons,
       lngDict,
+      mainPerson,
       lng: params.lng,
-      mainPerson: persons.find((person) => person.showInHero)
+      persons: votedPersons.filter((person) => person.id !== mainPerson.id)
     }
   };
 }
 
 HomePage.propTypes = {
+  persons: PropTypes.shape({}).isRequired,
   mainPerson: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 

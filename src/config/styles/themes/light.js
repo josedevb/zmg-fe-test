@@ -9,7 +9,15 @@ export default {
     bg: {
       primary: colors.black,
       secondary: colors.white,
-      lightGray: colors.lightGray
+      lightGray: colors.lightGray,
+      badVote: colors.badVoteOrange,
+      goodVote: colors.goodVoteBlue,
+      badVoteCrystal: colors.badVoteOrangeCrystal,
+      goodVoteCrystal: colors.goodVoteBlueCrystal
+    },
+    border: {
+      primary: colors.black,
+      secondary: colors.white
     },
     font: {
       primary: colors.black,
