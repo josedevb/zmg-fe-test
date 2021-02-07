@@ -8,7 +8,8 @@ export default {
   colors: {
     bg: {
       primary: colors.black,
-      secondary: colors.white
+      secondary: colors.white,
+      lightGray: colors.lightGray
     },
     font: {
       primary: colors.black,

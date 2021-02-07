@@ -22,7 +22,7 @@ const BlurContent = ({ person }) => {
     <StyledContainer>
       <StyledBlur>
         <StyledCaption>{t('hero.opinion')}</StyledCaption>
-        <StyledName>{person.name}</StyledName>
+        <StyledName>{person.name}?</StyledName>
         <StyledDescription>{person.description}</StyledDescription>
         <StyledInformation>
           <StyledInformationIcon>

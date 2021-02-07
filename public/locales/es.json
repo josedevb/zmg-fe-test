@@ -12,6 +12,11 @@
     "moreInformation": "Mas informacion",
     "verdict": "Cual es tu veredicto?",
     "closingIn": "Cierra en",
-    "uniteTime": "Dias"
+    "uniteTime": "dias"
+  },
+  "beHeard": {
+    "titleComplement":"Habla, sé escuchado.",
+    "title":"Se contado",
+    "description":"Rule of Thumb es un tribunal de opinión pública de origen colectivo donde cualquiera y todos pueden hablar y hablar libremente. Es fácil: tú compartes tu opinión, nosotros analizamos y ponemos los datos en un informe público"
   }
 }

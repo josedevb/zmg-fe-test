@@ -1,34 +1,46 @@
 import styled from 'styled-components';
 
 export const StyledList = styled.ul`
-  width: auto;
+  width: 100%;
   display: flex;
   list-style: none;
-  position: relative;
-  text-align: left;
+  margin-top: ${({ theme }) => theme.spacing(3)};
   font-weight: 300;
-  background-color: ${({ theme }) => theme.bg.black};
+  align-items: center;
+  justify-content: space-evenly;
   font-size: ${({ theme }) => theme.font.size.h6};
+  background-color: ${({ theme }) => theme.bg.black};
+
+  ${({ theme }) => theme.devices.laptop} {
+    width: auto;
+    margin: 0px;
+  }
 `;
 
 export const StyledListItem = styled.li`
+  width: auto;
   cursor: pointer;
-  font-size: ${({ theme }) => theme.font.size.subtitle1};
-  margin: ${({ theme }) => theme.spacing(0, 0, 0, 3)};
+  margin: ${({ theme }) => theme.spacing(0, 0, 0, 2)};
+  font-size: ${({ theme }) => theme.font.size.paragraph3};
   :hover {
     color: ${({ theme }) => theme.colors.font.brand};
   }
+
   ${({ theme }) => theme.devices.tablet} {
-    font-size: ${({ theme }) => theme.font.size.subtitle1};
+    width: auto;
     margin: ${({ theme }) => theme.spacing(0, 0, 0, 12)};
+    font-size: ${({ theme }) => theme.font.size.paragraph1};
   }
 `;
 
 export const StyledSearchIcon = styled.div`
+  width: 15px;
+  height: 15px;
   position: relative;
-  width: 27px;
-  height: 27px;
+
   ${({ theme }) => theme.devices.tablet} {
+    width: 27px;
+    height: 27px;
     margin-left: auto;
   }
 `;

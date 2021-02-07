@@ -8,20 +8,15 @@ export const StyledNavbar = styled.nav`
   display: flex;
   position: absolute;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   background: transparent;
   padding-top: ${({ theme }) => theme.spacing(4)};
   z-index: ${({ theme }) => theme.elevation.fixed};
   color: ${({ theme }) => theme.colors.font.secondary};
-  flex-wrap: wrap;
-  justify-content: center;
-
-  ${({ theme }) => theme.devices.tablet} {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
   ${({ theme }) => theme.devices.laptop} {
+    flex-direction: row;
     justify-content: space-between;
   }
 `;

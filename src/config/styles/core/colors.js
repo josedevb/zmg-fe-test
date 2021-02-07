@@ -1,6 +1,7 @@
 export default {
   black: 'black',
   white: 'white',
+  lightGray: '#EBEBEB',
   softGray: 'rgba(47, 47, 47, .8)',
   crystalBlack: 'rgba(0, 0, 0, .18)',
   transparentBlack: 'rgba(0, 0, 0, .3)',

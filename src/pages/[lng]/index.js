@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import Hero from '~/components/Hero/Hero';
 import Layout from '~/components/Layout/Layout';
+import BeHeardMessage from '~/components/BeHeardMessage/BeHeardMessage';
 
 const persons = [
   {
@@ -31,6 +32,7 @@ const persons = [
 const HomePage = ({ mainPerson }) => (
   <Layout>
     <Hero person={mainPerson} />
+    <BeHeardMessage />
   </Layout>
 );
 
