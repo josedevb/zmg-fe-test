@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import VotesRating from './VotesRating/VotesRating';
 import VotesActions from './VotesAction/VotesActions';
-import VoteButton from '../../VoteButton/VoteButton';
+import VoteButton from '~/components/VoteButton/VoteButton';
 import {
   StyledName,
   StyledTime,
