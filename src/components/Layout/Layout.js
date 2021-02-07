@@ -2,6 +2,7 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 
 import Navbar from '~/components/Navbar/Navbar';
+import Footer from '~/components/Footer/Footer';
 import useTranslation from '~/hooks/useTranslation';
 import { contentLanguageMap } from '~/config/constants/languages';
 
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       </Head>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 };

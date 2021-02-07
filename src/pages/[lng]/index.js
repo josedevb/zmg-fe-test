@@ -4,6 +4,8 @@ import Hero from '~/components/Hero/Hero';
 import votedPersons from '~/__mocks__/persons';
 import Layout from '~/components/Layout/Layout';
 import VoteSection from '~/components/VoteSection/VoteSection';
+import SmallBanner from '~/components/SmallBanner/SmallBanner';
+import DottedLine from '~/components/DottedLine/DottedLine';
 import BeHeardMessage from '~/components/BeHeardMessage/BeHeardMessage';
 
 const HomePage = ({ persons, mainPerson }) => (
@@ -11,6 +13,8 @@ const HomePage = ({ persons, mainPerson }) => (
     <Hero person={mainPerson} />
     <BeHeardMessage />
     <VoteSection persons={persons} />
+    <SmallBanner />
+    <DottedLine />
   </Layout>
 );
 

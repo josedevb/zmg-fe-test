@@ -7,6 +7,7 @@ import {
   StyledPercentageLogo,
   StyledPercentageText
 } from './VotesRating.styled';
+import { icons } from '~/config/constants/assets';
 import votesActions from '~/config/constants/votes';
 
 const VotesRating = ({ likesPercentage, dislikesPercentage }) => (
@@ -18,7 +19,7 @@ const VotesRating = ({ likesPercentage, dislikesPercentage }) => (
           loading='lazy'
           layout='fill'
           objectFit='contain'
-          src='/icons/like.svg'
+          src={icons.like}
         />
       </StyledPercentageLogo>
       <StyledPercentageText>{likesPercentage}</StyledPercentageText>
@@ -27,16 +28,16 @@ const VotesRating = ({ likesPercentage, dislikesPercentage }) => (
       type={votesActions.dislike}
       width={`${dislikesPercentage}%`}
     >
+      <StyledPercentageText>{dislikesPercentage}</StyledPercentageText>
       <StyledPercentageLogo>
         <Image
           quality={100}
           loading='lazy'
           layout='fill'
           objectFit='contain'
-          src='/icons/dislike.svg'
+          src={icons.dislike}
         />
       </StyledPercentageLogo>
-      <StyledPercentageText>{dislikesPercentage}</StyledPercentageText>
     </StyledPercentage>
   </StyledContainer>
 );

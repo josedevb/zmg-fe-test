@@ -19,8 +19,8 @@ const persons = [
     name: 'Kanye West',
     image: '/images/kanye-west.png',
     votes: {
-      likes: 60,
-      dislikes: 20
+      likes: 95,
+      dislikes: 52
     },
     showInHero: false,
     closingDays: 24,
@@ -34,7 +34,7 @@ const persons = [
     name: 'Mark Zuckerberg',
     image: '/images/mark-zuckerberg.png',
     votes: {
-      likes: 36,
+      likes: 52,
       dislikes: 90
     },
     showInHero: false,
@@ -49,8 +49,8 @@ const persons = [
     name: 'Cristina Fernandez de Kirchner',
     image: '/images/cristina-kirchner.png',
     votes: {
-      likes: 36,
-      dislikes: 50
+      likes: 52,
+      dislikes: 90
     },
     showInHero: false,
     closingDays: 24,
@@ -64,8 +64,8 @@ const persons = [
     name: 'Malala Yousafzai',
     image: '/images/malala-yousafzai.png',
     votes: {
-      likes: 64,
-      dislikes: 15
+      likes: 95,
+      dislikes: 52
     },
     showInHero: false,
     closingDays: 24,

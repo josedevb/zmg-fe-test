@@ -13,7 +13,8 @@ export default {
       badVote: colors.badVoteOrange,
       goodVote: colors.goodVoteBlue,
       badVoteCrystal: colors.badVoteOrangeCrystal,
-      goodVoteCrystal: colors.goodVoteBlueCrystal
+      goodVoteCrystal: colors.goodVoteBlueCrystal,
+      banner: colors.lightWhite
     },
     border: {
       primary: colors.black,

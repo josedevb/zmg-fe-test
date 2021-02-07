@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { icons } from '~/config/constants/assets';
 import Container from '~/components/Container/Container';
 import { StyledContainer, StyledCloseIcon } from './MessageContainer.styled';
 
@@ -21,7 +22,7 @@ const MessageContainer = ({ children, containerProps }) => {
               quality={100}
               loading='eager'
               objectFit='cover'
-              src='/icons/close.svg'
+              src={icons.close}
             />
           </StyledCloseIcon>
         </StyledContainer>

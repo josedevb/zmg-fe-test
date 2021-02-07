@@ -8,6 +8,7 @@ export default {
   transparentBlack: 'rgba(0, 0, 0, .3)',
   lightGreen: 'rgba(28, 187, 180, .8)',
   lightYellow: 'rgba(255, 173, 29, .8)',
+  lightWhite: 'rgba(255, 255, 255, 0.8)',
   crystalWhite: 'rgba(255, 255, 255, .4)',
   badVoteOrange: '#FFAD1D',
   goodVoteBlue: '#1DBBB4',

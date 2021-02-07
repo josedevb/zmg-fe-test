@@ -8,7 +8,7 @@ const VotesActions = () => (
   <VoteButtons>
     <VoteButton panel isLike />
     <VoteButton panel />
-    <OutlinedButton color='primary' text='Vote now' />
+    <OutlinedButton inverseColors text='Vote now' />
   </VoteButtons>
 );
 

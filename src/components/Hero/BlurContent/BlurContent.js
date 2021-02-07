@@ -13,6 +13,7 @@ import {
   StyledInformationIcon
 } from './BlurContent.styled';
 import useTranslation from '~/hooks/useTranslation';
+import { icons } from '~/config/constants/assets';
 import ThumbButtons from '../ThumbButtons/ThumbButtons';
 
 const BlurContent = ({ person }) => {
@@ -32,7 +33,7 @@ const BlurContent = ({ person }) => {
               quality={100}
               loading='eager'
               objectFit='contain'
-              src='/icons/wikipedia.png'
+              src={icons.wikipedia}
             />
           </StyledInformationIcon>
           <Link href='https://google.co'>{t('hero.moreInformation')}</Link>

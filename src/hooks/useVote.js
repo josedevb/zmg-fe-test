@@ -9,7 +9,7 @@ const useVote = ({ likes = 0, dislikes = 0 } = {}) => {
   );
 
   const dislikesPercentage = useMemo(
-    () => Math.floor((dislikes * 100) / totalVotes),
+    () => Math.ceil((dislikes * 100) / totalVotes),
     [dislikes, totalVotes]
   );
 

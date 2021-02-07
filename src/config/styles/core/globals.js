@@ -1,106 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Black.woff2') format('woff2'),
-      url('/fonts/Lato-Black.woff') format('woff'),
-      url('/fonts/Lato-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-BlackItalic.woff2') format('woff2'),
-      url('/fonts/Lato-BlackItalic.woff') format('woff'),
-      url('/fonts/Lato-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Light.woff2') format('woff2'),
-      url('/fonts/Lato-Light.woff') format('woff'),
-      url('/fonts/Lato-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-BoldItalic.woff2') format('woff2'),
-      url('/fonts/Lato-BoldItalic.woff') format('woff'),
-      url('/fonts/Lato-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Italic.woff2') format('woff2'),
-      url('/fonts/Lato-Italic.woff') format('woff'),
-      url('/fonts/Lato-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Bold.woff2') format('woff2'),
-      url('/fonts/Lato-Bold.woff') format('woff'),
-      url('/fonts/Lato-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato Hairline';
-  src: url('/fonts/Lato-HairlineItalic.woff2') format('woff2'),
-      url('/fonts/Lato-HairlineItalic.woff') format('woff'),
-      url('/fonts/Lato-HairlineItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Regular.woff2') format('woff2'),
-      url('/fonts/Lato-Regular.woff') format('woff'),
-      url('/fonts/Lato-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato Hairline';
-  src: url('/fonts/Lato-Hairline.woff2') format('woff2'),
-      url('/fonts/Lato-Hairline.woff') format('woff'),
-      url('/fonts/Lato-Hairline.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-LightItalic.woff2') format('woff2'),
-      url('/fonts/Lato-LightItalic.woff') format('woff'),
-      url('/fonts/Lato-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
   /* Document */
 
   /**
@@ -447,6 +347,20 @@ const GlobalStyles = createGlobalStyle`
   p, h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
+  }
+
+  ol, ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  button {
+    outline: none;
+  }
+
+  a {
+    color: inherit;
   }
 `;
 

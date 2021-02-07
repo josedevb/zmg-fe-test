@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { VoteSummary, VoteThumb } from './VoteButton.styled';
 
 const VoteButton = ({ isLike, disabled, panel }) => {
-  const img = isLike ? '/icons/like.svg' : '/icons/dislike.svg';
+  const img = isLike ? '/icons/svg/like.svg' : '/icons/svg/dislike.svg';
 
   return (
     <VoteThumb isLike={isLike} disabled={disabled} panel={panel}>

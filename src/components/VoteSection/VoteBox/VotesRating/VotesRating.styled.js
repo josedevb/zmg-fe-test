@@ -21,7 +21,7 @@ export const StyledPercentage = styled.div`
   align-items: center;
   justify-content: ${({ type }) =>
     type === votesActions.like ? 'flex-start' : 'flex-end'};
-  padding-left: ${({ theme }) => theme.spacing(2)};
+  padding: ${({ theme }) => theme.spacing(2, 1)};
   background: ${({ theme, type }) =>
     type === votesActions.like
       ? theme.colors.bg.goodVoteCrystal

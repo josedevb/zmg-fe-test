@@ -23,5 +23,15 @@
     "title": "Votes",
     "month": "month ago",
     "in": "in"
+  },
+  "smallbanner": {
+    "text": "Is there anyone else you would us to add?",
+    "submit": "Submit a Name"
+  },
+  "footer": {
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "follow": "Follow Us"
   }
 }

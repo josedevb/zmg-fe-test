@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import Link from '~/components/Link/Link';
+import { icons } from '~/config/constants/assets';
 import useTranslations from '~/hooks/useTranslation';
 import { StyledList, StyledListItem, StyledSearchIcon } from './List.styled';
 
@@ -27,7 +28,7 @@ const List = () => {
               loading='eager'
               layout='fill'
               objectFit='contain'
-              src='/icons/search.svg'
+              src={icons.search}
             />
           </StyledSearchIcon>
         </Link>

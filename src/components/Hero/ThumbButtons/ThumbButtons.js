@@ -5,6 +5,7 @@ import {
   StyledContainer,
   StyledImageContainer
 } from './ThumbButtons.styled';
+import { icons } from '~/config/constants/assets';
 
 const ThumbButtons = () => (
   <StyledContainer>
@@ -16,7 +17,7 @@ const ThumbButtons = () => (
           layout='fill'
           loading='eager'
           objectFit='cover'
-          src='/icons/like.svg'
+          src={icons.like}
         />
       </StyledImageContainer>
     </StyledButton>
@@ -28,7 +29,7 @@ const ThumbButtons = () => (
           layout='fill'
           loading='eager'
           objectFit='cover'
-          src='/icons/dislike.svg'
+          src={icons.dislike}
         />
       </StyledImageContainer>
     </StyledButton>
