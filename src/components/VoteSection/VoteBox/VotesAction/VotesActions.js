@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { VoteButtons } from '../VoteBox.styled';
-import VoteButton from '~/components/VoteButton/VoteButton';
+import VoteButton from '../VoteButton/VoteButton';
 import OutlinedButton from '~/components/OutlinedButton/OutlinedButton';
 
 const VotesActions = () => (
