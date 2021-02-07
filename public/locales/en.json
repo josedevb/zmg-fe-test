@@ -1,3 +1,17 @@
 {
-  "intro": "text-en"
+  "intro": "text-en",
+  "ruleOfThumb": "Rule of thumb",
+  "navbar": {
+    "rule": "Rule of Thumb.",
+    "pastTrials": "Past trials",
+    "howItWorks": "How it Works",
+    "login": "Log in / Sign Up"
+  },
+  "hero": {
+    "opinion": "What's your opinion on",
+    "moreInformation": "More information",
+    "verdict": "What's Your Verdict",
+    "closingIn": "Closing In",
+    "uniteTime": "Days"
+  }
 }

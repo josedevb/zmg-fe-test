@@ -1,3 +1,17 @@
 {
-  "intro": "text-es"
+  "intro": "text-es",
+  "ruleOfThumb": "Rule of Thumb.",
+  "navbar": {
+    "rule": "Rule of Thumb.",
+    "pastTrials": "Ensayos pasado",
+    "howItWorks": "Como funciona",
+    "login": "Iniciar / Registro"
+  },
+  "hero": {
+    "opinion": "Cual es tu opinion sobre",
+    "moreInformation": "Mas informacion",
+    "verdict": "Cual es tu veredicto?",
+    "closingIn": "Cierra en",
+    "uniteTime": "Dias"
+  }
 }

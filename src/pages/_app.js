@@ -6,12 +6,12 @@ import I18n from '~/config/lib/contexts/i18n';
 import GlobalStyles from '~/config/styles/core/globals';
 
 const MainComponent = ({ Component, pageProps }) => (
-  <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
+  <ThemeProvider theme={theme}>
+    <GlobalStyles />
+    <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
       <Component {...pageProps} />
-    </ThemeProvider>
-  </I18n>
+    </I18n>
+  </ThemeProvider>
 );
 
 MainComponent.propTypes = {

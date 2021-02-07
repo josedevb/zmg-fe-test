@@ -54,9 +54,7 @@ I18n.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]).isRequired,
-  lngDict: PropTypes.shape({
-    intro: PropTypes.string
-  }),
+  lngDict: PropTypes.shape({}),
   locale: PropTypes.string
 };
 

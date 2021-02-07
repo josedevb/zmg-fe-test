@@ -1,5 +1,5 @@
-const withFonts = require("next-fonts");
-const withSourceMaps = require("@zeit/next-source-maps");
+const withFonts = require('next-fonts');
+const withSourceMaps = require('@zeit/next-source-maps');
 
 module.exports = withFonts(
   withSourceMaps({
@@ -11,9 +11,9 @@ module.exports = withFonts(
         {
           source: '/',
           destination: '/en',
-          permanent: true,
-        },
-      ]
-    },
+          permanent: true
+        }
+      ];
+    }
   })
 );
