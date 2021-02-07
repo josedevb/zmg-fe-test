@@ -8,14 +8,14 @@ import {
   StyledDescriptionContainer
 } from './BeHeardMessage.styled';
 import useTranslations from '~/hooks/useTranslation';
-import MessageContent from './MessageContent/MessageContent';
+import MessageContainer from './MessageContainer/MessageContainer';
 
 const BeHeardMessage = () => {
   const { t } = useTranslations();
 
   return (
     <StyledContainer>
-      <MessageContent>
+      <MessageContainer>
         <StyledMessageContainer>
           <StyledTitleContainer>
             <StyledTitleComplement>
@@ -27,7 +27,7 @@ const BeHeardMessage = () => {
             <StyledDescription>{t('beHeard.description')}</StyledDescription>
           </StyledDescriptionContainer>
         </StyledMessageContainer>
-      </MessageContent>
+      </MessageContainer>
     </StyledContainer>
   );
 };

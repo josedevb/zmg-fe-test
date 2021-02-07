@@ -3,9 +3,9 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Container from '~/components/Container/Container';
-import { StyledContainer, StyledCloseIcon } from './MessageContent.styled';
+import { StyledContainer, StyledCloseIcon } from './MessageContainer.styled';
 
-const MessageContent = ({ children, containerProps }) => {
+const MessageContainer = ({ children, containerProps }) => {
   const [isOpen, setIsOpen] = useState(true);
   const onClickCloseIcon = () => setIsOpen(false);
 
@@ -30,7 +30,7 @@ const MessageContent = ({ children, containerProps }) => {
   );
 };
 
-MessageContent.propTypes = {
+MessageContainer.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
@@ -38,8 +38,8 @@ MessageContent.propTypes = {
   containerProps: PropTypes.shape({})
 };
 
-MessageContent.defaultProps = {
+MessageContainer.defaultProps = {
   containerProps: {}
 };
 
-export default MessageContent;
+export default MessageContainer;
