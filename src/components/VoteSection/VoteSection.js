@@ -14,7 +14,11 @@ const VoteSection = ({ persons }) => {
       <StyledSectionTitle>{t('vote.title')}</StyledSectionTitle>
       <StyledVoteStrap>
         {persons.map((person, index) => (
-          <VoteBox person={person} isEven={index % 2 === 0} />
+          <VoteBox
+            key={`voted-person-${index}`}
+            person={person}
+            isEven={index % 2 === 0}
+          />
         ))}
       </StyledVoteStrap>
     </Container>

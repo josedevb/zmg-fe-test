@@ -24,7 +24,6 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  menuItems: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
 import {
   StyledButton,
@@ -35,14 +34,5 @@ const ThumbButtons = () => (
     </StyledButton>
   </StyledContainer>
 );
-
-ThumbButtons.propTypes = {
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string
-  }).isRequired
-};
-
-ThumbButtons.defaultProps = {};
 
 export default ThumbButtons;

@@ -45,7 +45,10 @@ const BlurContent = ({ person }) => {
 };
 
 BlurContent.propTypes = {
-  person: PropTypes.oneOfType({}).isRequired
+  person: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string
+  }).isRequired
 };
 
 BlurContent.defaultProps = {};

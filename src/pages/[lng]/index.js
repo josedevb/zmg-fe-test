@@ -32,8 +32,8 @@ export async function getServerSideProps({ params }) {
 }
 
 HomePage.propTypes = {
-  persons: PropTypes.shape({}).isRequired,
-  mainPerson: PropTypes.arrayOf(PropTypes.shape({})).isRequired
+  mainPerson: PropTypes.shape({}).isRequired,
+  persons: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 
 export default HomePage;

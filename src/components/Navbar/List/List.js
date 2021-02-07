@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
 import Link from '~/components/Link/Link';
 import useTranslations from '~/hooks/useTranslation';
@@ -36,7 +35,5 @@ const List = () => {
     </StyledList>
   );
 };
-
-List.propTypes = { items: PropTypes.arrayOf(PropTypes.shape({})).isRequired };
 
 export default List;
