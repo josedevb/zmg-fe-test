@@ -7,6 +7,7 @@ Markup -> https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/tes
 Demo URL: https://zmg-fe-test-mrb4is2aw.vercel.app/en
 
 ## Stack
+
 - Front-end
   - [React.js](https://es.reactjs.org/)
   - [Next.js](https://nextjs.org/)
@@ -19,6 +20,7 @@ Demo URL: https://zmg-fe-test-mrb4is2aw.vercel.app/en
   - [Vercel](https://vercel.com/dashboard)
 
 ## Highlights
+
 - Theme-friendly
 - Real time data communication
 - Internationalization (i18n)
@@ -27,9 +29,11 @@ Demo URL: https://zmg-fe-test-mrb4is2aw.vercel.app/en
 - Animated
 
 ## Requeriments
- - Node >= 12.0.0
+
+- Node >= 12.0.0
 
 ## Local configuration
+
 1. yarn install
 2. yarn dev
 3. go to `http://localhost:3000/en`
@@ -45,20 +49,20 @@ Explanation of hierarchies in files and layers.
       │   ├── icons/                       # Icons asset Folder
       │   ├── images/                      # Images asset Folder
       |   └── locales/                     # Translations asset folder
-      ├── src/
-      │   ├── __mocks__/                   # Mocked data for testing
-      │   ├── components/                  # Component Folder
-      │   ├── config/
-      |   |   ├── api/                     # Api Calls and requests third party
-      |   |   ├── constants/               # Constants objects
-      |   |   ├── firebase/                # Firebase setup method
-      |   |   ├── styles/                  # Styles for grid and themes
-      |   |   ├── utils/                   # Utilities methods
-      |   |   └── lib/
-      |   |       └── contexts             # React context provides
-      │   ├── hooks/                       # Custom Hooks
-      │   └── pages/                       # Screens folder for next.js
-      └── tests/                           # Automated unitary tests
+      └── src/
+          ├── __mocks__/                   # Mocked data for testing
+          ├── __tests__/                   # Test folder
+          ├── components/                  # Component Folder
+          ├── config/
+          |   ├── api/                     # Api Calls and requests third party
+          |   ├── constants/               # Constants objects
+          |   ├── firebase/                # Firebase setup method
+          |   ├── styles/                  # Styles for grid and themes
+          |   ├── utils/                   # Utilities methods
+          |   └── lib/
+          |       └── contexts             # React context provides
+          ├── hooks/                       # Custom Hooks
+          └── pages/                       # Screens folder for next.js
 
 ## Branches
 
