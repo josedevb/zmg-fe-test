@@ -1,0 +1,40 @@
+{
+  "intro": "text-en",
+  "ruleOfThumb": "Rule of thumb",
+  "navbar": {
+    "rule": "Rule of Thumb.",
+    "pastTrials": "Past Trials",
+    "howItWorks": "How it Works",
+    "login": "Log In / Sign Up"
+  },
+  "hero": {
+    "opinion": "What's your opinion on",
+    "moreInformation": "More information",
+    "verdict": "What's Your Verdict",
+    "closingIn": "Closing In",
+    "uniteTime": "days"
+  },
+  "beHeard":{
+    "titleComplement":"Speak out, Be Heard.",
+    "title":"Be counted",
+    "description":"Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. Is's easy: You share your opinion, we analyze and put the data in a public report"
+  },
+  "vote": {
+    "title": "Votes",
+    "month": "month ago",
+    "in": "in",
+    "again": "Vote again",
+    "button": "Vote now",
+    "thanks": "Thank you for voting!"
+  },
+  "smallbanner": {
+    "text": "Is there anyone else you would us to add?",
+    "submit": "Submit a Name"
+  },
+  "footer": {
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "follow": "Follow Us"
+  }
+}

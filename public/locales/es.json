@@ -1,0 +1,40 @@
+{
+  "intro": "text-es",
+  "ruleOfThumb": "Rule of Thumb.",
+  "navbar": {
+    "rule": "Rule of Thumb.",
+    "pastTrials": "Ensayos pasado",
+    "howItWorks": "Como funciona",
+    "login": "Iniciar / Registro"
+  },
+  "hero": {
+    "opinion": "Cual es tu opinion sobre",
+    "moreInformation": "Mas informacion",
+    "verdict": "Cual es tu veredicto?",
+    "closingIn": "Cierra en",
+    "uniteTime": "dias"
+  },
+  "beHeard": {
+    "titleComplement":"Habla, sé escuchado.",
+    "title":"Se contado",
+    "description":"Rule of Thumb es un tribunal de opinión pública de origen colectivo donde cualquiera y todos pueden hablar y hablar libremente. Es fácil: tú compartes tu opinión, nosotros analizamos y ponemos los datos en un informe público"
+  },
+  "vote": {
+    "title": "Votos",
+    "month": "meses atras",
+    "in": "en",
+    "again": "Votar de nuevo",
+    "button": "Vota ahora",
+    "thanks": "Gracias por votar!"
+  },
+  "smallbanner": {
+    "text": "¿Hay alguien más que quisiera que agreguemos?",
+    "submit": "Envia un nombre"
+  },
+  "footer": {
+    "terms": "Terminos y condiciones",
+    "privacy": "Politica de privacidad",
+    "contact": "Contactanos",
+    "follow": "Siguenos"
+  }
+}

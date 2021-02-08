@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~/pages/*": ["src/pages/*"],
+      "~/hooks/*": ["src/hooks/*"],
+      "~/config/*": ["src/config/*"],
+      "~/styles/*": ["src/config/styles/*"],
+      "~/components/*": ["src/components/*"],
+      "~/constants/*": ["src/config/constants/*"],
+      "~/__mocks__/*": ["src/__mocks__/*"],
+      "~/firebase/*": ["src/config/firebase/*"],
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
