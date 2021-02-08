@@ -22,7 +22,10 @@
   "vote": {
     "title": "Votos",
     "month": "meses atras",
-    "in": "en"
+    "in": "en",
+    "again": "Votar de nuevo",
+    "button": "Vota ahora",
+    "thanks": "Gracias por votar!"
   },
   "smallbanner": {
     "text": "¿Hay alguien más que quisiera que agreguemos?",

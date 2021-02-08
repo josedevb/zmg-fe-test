@@ -22,7 +22,10 @@
   "vote": {
     "title": "Votes",
     "month": "month ago",
-    "in": "in"
+    "in": "in",
+    "again": "Vote again",
+    "button": "Vote now",
+    "thanks": "Thank you for voting!"
   },
   "smallbanner": {
     "text": "Is there anyone else you would us to add?",

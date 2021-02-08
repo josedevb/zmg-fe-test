@@ -1,10 +1,6 @@
-import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
-import VotesRating from './VotesRating/VotesRating';
-import VotesActions from './VotesAction/VotesActions';
-import VoteButton from './VoteButton/VoteButton';
 import {
   StyledName,
   StyledTime,
@@ -13,33 +9,32 @@ import {
   StyledCategory,
   VoteInformation,
   StyledContainer,
-  StyledDescription,
   StyledTimeAndCategory
 } from './VoteBox.styled';
 import useVote from '~/hooks/useVote';
+import VoteButton from './VoteButton/VoteButton';
+import VotesRating from './VotesRating/VotesRating';
+import VotesActions from './VotesAction/VotesActions';
 import useTranslations from '~/hooks/useTranslation';
 
 const VoteBox = ({ person, isEven }) => {
-  const { likes, dislikes } = person.votes;
   const { t } = useTranslations();
-  const isLiked = likes > dislikes;
-
-  const { likesPercentage, dislikesPercentage } = useVote({
-    likes,
-    dislikes
-  });
+  const { likesPercentage, dislikesPercentage } = useVote(person.votes);
 
   return (
     <StyledContainer isEven={isEven}>
       <Image
-        src={person.image}
         layout='fill'
         loading='lazy'
         objectFit='cover'
+        src={person.image}
       />
       <VoteContent>
         <VoteTitle>
-          <VoteButton isLike={isLiked} disabled />
+          <VoteButton
+            disabled
+            isLike={person.votes.likes > person.votes.dislikes}
+          />
           <StyledName>{person.name}</StyledName>
         </VoteTitle>
         <VoteInformation>
@@ -51,8 +46,7 @@ const VoteBox = ({ person, isEven }) => {
               {t('vote.in')} {person.category}
             </StyledCategory>
           </StyledTimeAndCategory>
-          <StyledDescription>{person.description}</StyledDescription>
-          <VotesActions />
+          <VotesActions person={person} />
         </VoteInformation>
       </VoteContent>
       <VotesRating

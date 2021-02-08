@@ -14,6 +14,8 @@ export const VoteThumb = styled.div`
   width: auto;
   background-color: ${({ theme, isLike }) =>
     isLike ? theme.colors.bg.goodVote : theme.colors.bg.badVote};
+  border: ${({ theme, selected }) =>
+    selected ? `2px solid ${theme.colors.bg.secondary}` : 'none'};
 
   ${({ theme }) => theme.devices.laptop} {
     height: 25px;

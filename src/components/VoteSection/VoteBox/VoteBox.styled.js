@@ -69,14 +69,6 @@ export const StyledCategory = styled.p`
   font-size: ${({ theme }) => theme.font.size.caption};
 `;
 
-export const StyledDescription = styled.p`
-  width: 70%;
-  font-weight: 300;
-  color: ${({ theme }) => theme.colors.font.secondary};
-  font-size: ${({ theme }) => theme.font.size.subtitle1};
-  margin-bottom: ${({ theme }) => theme.spacing(4)};
-`;
-
 export const VoteInformation = styled.div`
   padding: ${({ theme }) => theme.spacing(0, 0, 5, 10)};
 `;

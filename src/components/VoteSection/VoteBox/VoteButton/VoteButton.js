@@ -1,14 +1,15 @@
-import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
+import { icons } from '~/config/constants/assets';
 import { VoteSummary, VoteThumb } from './VoteButton.styled';
 
-const VoteButton = ({ isLike, disabled, panel }) => {
-  const img = isLike ? '/icons/svg/like.svg' : '/icons/svg/dislike.svg';
+const VoteButton = (props) => {
+  const { isLike } = props;
+  const img = isLike ? icons.like : icons.dislike;
 
   return (
-    <VoteThumb isLike={isLike} disabled={disabled} panel={panel}>
+    <VoteThumb {...props}>
       <VoteSummary>
         <Image src={img} layout='fill' loading='lazy' objectFit='cover' />
       </VoteSummary>
@@ -17,15 +18,17 @@ const VoteButton = ({ isLike, disabled, panel }) => {
 };
 
 VoteButton.propTypes = {
+  panel: PropTypes.bool,
   isLike: PropTypes.bool,
   disabled: PropTypes.bool,
-  panel: PropTypes.bool
+  selected: PropTypes.bool
 };
 
 VoteButton.defaultProps = {
+  panel: false,
   isLike: false,
-  disabled: false,
-  panel: false
+  selected: false,
+  disabled: false
 };
 
 export default VoteButton;
