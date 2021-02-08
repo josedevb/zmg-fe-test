@@ -7,7 +7,6 @@ import {
   StyledName,
   StyledVerdict,
   StyledCaption,
-  StyledContainer,
   StyledDescription,
   StyledInformation,
   StyledInformationIcon
@@ -15,12 +14,13 @@ import {
 import useTranslation from '~/hooks/useTranslation';
 import { icons } from '~/config/constants/assets';
 import ThumbButtons from '../ThumbButtons/ThumbButtons';
+import Container from '~/components/Container/Container';
 
 const BlurContent = ({ person }) => {
   const { t } = useTranslation();
 
   return (
-    <StyledContainer>
+    <Container>
       <StyledBlur>
         <StyledCaption>{t('hero.opinion')}</StyledCaption>
         <StyledName>{person.name}?</StyledName>
@@ -41,7 +41,7 @@ const BlurContent = ({ person }) => {
         <StyledVerdict>{t('hero.verdict')}</StyledVerdict>
       </StyledBlur>
       <ThumbButtons />
-    </StyledContainer>
+    </Container>
   );
 };
 

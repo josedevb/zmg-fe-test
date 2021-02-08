@@ -26,6 +26,7 @@
   "homepage": "https://github.com/jozekcore/zmg-fe-test#readme",
   "dependencies": {
     "eslint": "^7.19.0",
+    "framer-motion": "^3.3.0",
     "husky": "^4.3.8",
     "next": "10.0.6",
     "prop-types": "^15.7.2",

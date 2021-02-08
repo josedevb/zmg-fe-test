@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StyledContainer from './Container.styled';
+import { containerAnimation } from '~/constants/animations';
 
 const Container = ({ centered, children, fluid, limit, relative, ...rest }) => (
   <StyledContainer
@@ -10,6 +11,9 @@ const Container = ({ centered, children, fluid, limit, relative, ...rest }) => (
     limit={limit}
     centered={centered}
     relative={relative}
+    initial={containerAnimation.initial}
+    animate={containerAnimation.animate}
+    transition={containerAnimation.transition}
   >
     {children}
   </StyledContainer>

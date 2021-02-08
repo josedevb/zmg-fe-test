@@ -31,7 +31,7 @@ export const StyledLinks = styled.ul`
     height: 100%;
   }
 `;
-export const StyledFollowUs = styled.caption`
+export const StyledFollowUs = styled.p`
   display: block;
   font-weight: 300;
   margin: ${({ theme }) => theme.spacing(10, 0, 2, 0)};

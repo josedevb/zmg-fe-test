@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
 
 const isFluidContainer = ({ theme, fluid, limit }) =>
@@ -7,7 +8,7 @@ const isFluidContainer = ({ theme, fluid, limit }) =>
     max-width: ${limit ? theme.containerWidth.fluid.maxWidth : 'none'};
   `;
 
-export default styled.div`
+export default styled(motion.div)`
   ${({ relative }) =>
     relative
       ? css`

@@ -1,13 +1,4 @@
 import styled from 'styled-components';
-import Container from '~/components/Container/Container';
-
-export const StyledContainer = styled(Container)`
-  ${({ theme }) => theme.devices.desktop} {
-    margin: 0;
-    width: 45%;
-    max-width: 600px;
-  }
-`;
 
 export const StyledBlur = styled.div`
   max-width: 450px;

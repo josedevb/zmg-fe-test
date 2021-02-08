@@ -56,14 +56,14 @@ export const StyledName = styled.h2`
   }
 `;
 
-export const StyledTime = styled.caption`
+export const StyledTime = styled.p`
   color: ${({ theme }) => theme.colors.font.secondary};
   font-weight: bold;
   margin-right: ${({ theme }) => theme.spacing(1)};
   font-size: ${({ theme }) => theme.font.size.caption};
 `;
 
-export const StyledCategory = styled.caption`
+export const StyledCategory = styled.p`
   font-weight: 300;
   color: ${({ theme }) => theme.colors.font.secondary};
   font-size: ${({ theme }) => theme.font.size.caption};
