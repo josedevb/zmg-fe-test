@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"src/**/*.js\"",
+    "test": "jest --config ./jest.config.js",
     "prettier-lint": "node_modules/.bin/prettier -l --write \"src/**/*.js\""
   },
   "repository": {
@@ -25,8 +26,11 @@
   },
   "homepage": "https://github.com/jozekcore/zmg-fe-test#readme",
   "dependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "enzyme": "^3.11.0",
     "eslint": "^7.19.0",
     "firebase": "^8.2.6",
+    "firebase-mock": "^2.3.2",
     "framer-motion": "^3.3.0",
     "husky": "^4.3.8",
     "next": "10.0.6",
@@ -40,6 +44,7 @@
     "@zeit/next-source-maps": "^0.0.3",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^1.12.0",
+    "enzyme-to-json": "^3.6.1",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
