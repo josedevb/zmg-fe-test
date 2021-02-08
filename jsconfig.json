@@ -8,7 +8,8 @@
       "~/styles/*": ["src/config/styles/*"],
       "~/components/*": ["src/components/*"],
       "~/constants/*": ["src/config/constants/*"],
-      "~/__mocks__/*": ["src/__mocks__/*"]
+      "~/__mocks__/*": ["src/__mocks__/*"],
+      "~/firebase/*": ["src/config/firebase/*"],
     }
   },
   "exclude": ["node_modules", "build"]

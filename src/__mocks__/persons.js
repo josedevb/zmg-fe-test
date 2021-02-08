@@ -1,6 +1,5 @@
 const persons = [
   {
-    id: 1,
     name: 'Pope Francis',
     description:
       "He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or true pedophile punishing pontiff? (thumbs up)",
@@ -15,7 +14,6 @@ const persons = [
     category: 'Religion'
   },
   {
-    id: 2,
     name: 'Kanye West',
     image: '/images/kanye-west.png',
     votes: {
@@ -30,7 +28,6 @@ const persons = [
     category: 'Entertainment'
   },
   {
-    id: 3,
     name: 'Mark Zuckerberg',
     image: '/images/mark-zuckerberg.png',
     votes: {
@@ -45,7 +42,6 @@ const persons = [
     category: 'Business'
   },
   {
-    id: 4,
     name: 'Cristina Fernandez de Kirchner',
     image: '/images/cristina-kirchner.png',
     votes: {
@@ -60,7 +56,6 @@ const persons = [
     category: 'Politics'
   },
   {
-    id: 5,
     name: 'Malala Yousafzai',
     image: '/images/malala-yousafzai.png',
     votes: {
