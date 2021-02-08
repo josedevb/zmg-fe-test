@@ -2,6 +2,105 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   /* Document */
+  @font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato/Lato-Black.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Black.woff') format('woff'),
+      url('/fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-BlackItalic.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-BlackItalic.woff') format('woff'),
+      url('/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Light.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Light.woff') format('woff'),
+      url('/fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-BoldItalic.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-BoldItalic.woff') format('woff'),
+      url('/fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Italic.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Italic.woff') format('woff'),
+      url('/fonts/Lato/Lato-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Bold.woff') format('woff'),
+      url('/fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/fonts/Lato/Lato-HairlineItalic.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-HairlineItalic.woff') format('woff'),
+      url('/fonts/Lato/Lato-HairlineItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Regular.woff') format('woff'),
+      url('/fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/fonts/Lato/Lato-Hairline.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-Hairline.woff') format('woff'),
+      url('/fonts/Lato/Lato-Hairline.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-LightItalic.woff2') format('woff2'),
+      url('/fonts/Lato/Lato-LightItalic.woff') format('woff'),
+      url('/fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 
   /**
   * 1. Correct the line height in all browsers.

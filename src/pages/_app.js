@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import theme from '~/styles/themes/light';
 import I18n from '~/config/lib/contexts/i18n';
-import GlobalStyles from '~/config/styles/core/globals';
+import GlobalStyles from '~/styles/core/globals';
 
 const handleExitComplete = () => {
   if (typeof window !== 'undefined') {
